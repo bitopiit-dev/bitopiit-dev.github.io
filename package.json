@@ -1,0 +1,12 @@
+{
+  "name": "arifur-portfolio",
+  "private": true,
+  "description": "Full-stack portfolio of Khondaker Arifur Rahman: React front end + Node.js/Express/MongoDB API.",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:api": "npm --prefix server run dev",
+    "dev:web": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix server test"
+  }
+}

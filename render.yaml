@@ -1,0 +1,20 @@
+# Render Blueprint: deploys the API from this repo on the free plan.
+# In Render: New > Blueprint > pick this repo, then fill in the values it asks for.
+services:
+  - type: web
+    name: arifur-portfolio-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: ADMIN_TOKEN
+        generateValue: true

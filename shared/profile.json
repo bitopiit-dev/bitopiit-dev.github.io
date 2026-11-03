@@ -1,0 +1,173 @@
+{
+  "name": "Khondaker Arifur Rahman",
+  "title": "Deputy Manager, Enterprise Systems & IT Operations Leader",
+  "organisation": "Baridhi Garments Limited (Bitopi Group), Cumilla EPZ, Bangladesh",
+  "tagline": "I run ERP and IT for garment manufacturing: networks, security, servers and the factory systems production depends on.",
+  "status": "Open to Head of IT / Group IT Manager roles",
+  "location": "Cumilla, Bangladesh",
+  "contact": {
+    "email": "khondaker.arahman@gmail.com",
+    "phone": "+880 1871-001470",
+    "phoneHref": "+8801871001470",
+    "linkedin": "https://www.linkedin.com/in/arifurrahman-it",
+    "github": "https://github.com/bitopiit-dev"
+  },
+  "about": [
+    "ERP and IT operations leader with 12+ years in Bangladesh’s Ready-Made Garments sector, now running ERP and IT across Bitopi Group’s manufacturing units at Cumilla EPZ and reporting to the Group Sr. GM of ERP & IT.",
+    "I design and run enterprise networks (LAN, WAN, VPN, Cisco routing and switching), lead ISMS assessments and vulnerability management, and administer Windows and Linux servers, VMware and Hyper-V, Microsoft 365 and Active Directory. I also own the IT budget, vendor relationships and procurement, and the factory systems production depends on: CCTV, RFID, face recognition, access control and IP-PABX."
+  ],
+  "facts": [
+    { "value": "12+", "label": "years in enterprise IT" },
+    { "value": "5", "label": "employers since 2013" },
+    { "value": "4", "label": "certifications since 2025" }
+  ],
+  "strengths": [
+    "ERP administration", "IT infrastructure strategy", "Network architecture", "Cybersecurity & ISMS",
+    "Cisco routing & switching", "Disaster recovery & BCP", "VMware / Hyper-V", "Microsoft 365 & AD",
+    "Budget & vendor management", "Team leadership & training", "Applied AI (Gemini, IBM)"
+  ],
+  "experience": [
+    {
+      "role": "Deputy Manager, Enterprise Systems & IT Operations Leader",
+      "company": "Baridhi Garments Limited (Bitopi Group)",
+      "place": "Cumilla EPZ",
+      "start": "Jan 2026",
+      "end": "Present",
+      "current": true,
+      "intro": "Leads ERP and IT operations across the group’s manufacturing units.",
+      "points": [
+        "Lead and oversee ERP and IT operations across manufacturing units, keeping systems stable, secure and scalable.",
+        "Act as the link between business users and technical teams, translating operational needs into ERP solutions.",
+        "Manage ERP system administration, user access control, process optimisation and compliance.",
+        "Supervise IT infrastructure: servers, networks, printers, backups and security policies.",
+        "Drive digital transformation initiatives that improve efficiency, data accuracy and reporting.",
+        "Coordinate with vendors, consultants and internal stakeholders on system upgrades and support.",
+        "Mentor and guide the ERP & IT team, ensuring timely issue resolution and skill development."
+      ],
+      "wins": [
+        "Optimised ERP processes for garment manufacturing operations, reducing manual work and operational delays.",
+        "Ran ERP user training and change management, raising adoption across Production, HR, Accounts and Commercial.",
+        "Led resolution of critical ERP performance, reporting and data-accuracy issues under tight deadlines.",
+        "Cut IT service response time by restructuring ticket handling and writing standard operating procedures (SOPs).",
+        "Kept IT and systems at zero downtime during large-scale company events and operations.",
+        "Improved ERP reports used for management reporting and data analysis.",
+        "Maintained business continuity through regular backups, system monitoring and preventive maintenance."
+      ]
+    },
+    {
+      "role": "Assistant Manager, ERP & Information Technology",
+      "company": "Baridhi Garments Limited (Bitopi Group)",
+      "place": "SFB # 7 & 8, Cumilla EPZ",
+      "start": "Feb 2022",
+      "end": "Jan 2026",
+      "points": [
+        "Built the full digital infrastructure for head office and multiple factory locations, including LAN/WAN/VPN deployment and remote connectivity.",
+        "Conducted organisation-wide ISMS assessments and reduced risk through proactive vulnerability scanning and firewall implementation.",
+        "Led integration and support of Office 365, Exchange Server and Active Directory, improving internal communication and authentication security.",
+        "Supervised ERP operations, simplifying business processes and improving cross-departmental efficiency.",
+        "Managed IT budgeting, procurement and vendor relations for cost-effective hardware, software and licensing investments.",
+        "Provided executive-level reporting on IT performance, security incidents and infrastructure upgrades.",
+        "Coordinated business continuity planning, disaster recovery and regular employee security awareness training.",
+        "Ran next-generation firewalls, IDS/IPS, endpoint security and VMware / Hyper-V virtualisation; managed CCTV, RFID, face recognition, access control, IP-PABX and Polycom systems."
+      ]
+    },
+    {
+      "role": "Senior Executive, IT & MIS",
+      "company": "Misami Garments Limited (Bitopi Group)",
+      "place": "Shewrapara, Mirpur, Dhaka",
+      "start": "Feb 2020",
+      "end": "Feb 2022",
+      "points": [
+        "Administered domain controllers, file servers, security systems and the virtualised server environment.",
+        "Administered the ERP system and MIS reporting, delivering accurate and timely reports to senior management.",
+        "Integrated the payroll system with IT infrastructure and kept HR and finance data consistent.",
+        "Delivered Level 2/3 support across hardware, software, network and peripherals; kept IT asset records current.",
+        "Configured Microsoft 365 and Outlook and managed user accounts through Active Directory."
+      ]
+    },
+    {
+      "role": "IT Executive",
+      "company": "Amichi Apparels Limited",
+      "place": "Kallyanpur, Mirpur, Dhaka",
+      "start": "Nov 2017",
+      "end": "Jan 2020",
+      "points": [
+        "Managed LAN/WAN, wireless and VPN connectivity; configured Cisco switches and routers.",
+        "Administered CCTV, access control and video conferencing systems.",
+        "Maintained Windows servers (file, print, DHCP, DNS) and online/offline UPS/IPS for critical equipment.",
+        "Provided end-user support, wrote technical documentation and kept hardware and software asset registers."
+      ]
+    },
+    {
+      "role": "System Engineer, IT",
+      "company": "RingTech Limited",
+      "place": "Mohakhali, Dhaka",
+      "start": "Sep 2014",
+      "end": "Oct 2016",
+      "points": [
+        "Designed and deployed client networks: router administration, interface configuration, RIP and OSPF.",
+        "Configured Cisco switches and routers for LAN, WAN and Wi-Fi; tuned and troubleshot network performance.",
+        "Analysed client workflow, access and security requirements to specify infrastructure; supported Windows Server and Linux."
+      ]
+    },
+    {
+      "role": "Management Trainee Officer",
+      "company": "Alif Corporation",
+      "place": "Tejgaon Industrial Zone, Dhaka",
+      "start": "Mar 2013",
+      "end": "Aug 2014",
+      "points": [
+        "Rotated through IT operations, infrastructure management and business processes; handled IT support, hardware maintenance and network operations."
+      ]
+    },
+    {
+      "role": "Intern",
+      "company": "BTCL (Bangladesh Telecommunications Company Ltd.)",
+      "place": "Ramna, Dhaka",
+      "start": "Jul 2012",
+      "end": "Dec 2012",
+      "points": [
+        "Six-month internship covering telecom infrastructure, switching systems and network operations."
+      ]
+    }
+  ],
+  "skills": [
+    { "group": "Operating systems", "items": ["Windows Server 2008–2022", "Windows 7–11", "Ubuntu", "CentOS", "macOS"] },
+    { "group": "Networking", "items": ["Cisco IOS", "LAN / WAN / Wi-Fi / VPN", "OSPF", "RIP", "BGP", "DHCP / DNS", "IP-PABX"] },
+    { "group": "Security", "items": ["Firewalls", "IDS / IPS", "ISMS assessment", "Vulnerability analysis", "Access control", "CCTV", "RFID", "Face recognition"] },
+    { "group": "Servers & cloud", "items": ["Active Directory", "Exchange", "File / Print / Web servers", "Microsoft 365", "Teams", "SharePoint", "OneDrive"] },
+    { "group": "Virtualisation", "items": ["VMware vSphere", "Microsoft Hyper-V", "Virtual networking"] },
+    { "group": "ERP & MIS", "items": ["ERP administration", "MIS reporting", "Payroll integration", "Business intelligence"] },
+    { "group": "AI & generative AI", "items": ["AI fundamentals", "Google Gemini", "Generative AI", "Prompt engineering"] },
+    { "group": "Hardware", "items": ["Cisco switches / routers", "Barcode & network printers", "POS & handheld scanners", "Plotter & cutter", "Avery Dennison conveyor", "Polycom", "UPS / IPS"] }
+  ],
+  "certifications": [
+    { "name": "AI Fundamentals: Foundations for Understanding AI", "issuer": "IBM", "issued": "Sep 2026", "credentialId": "8614acf3-9a75-4efd-be0d-9475ddb10399", "skills": ["Artificial Intelligence", "Prompt Engineering"] },
+    { "name": "Cybersecurity", "issuer": "Asian Development Bank (ADB)", "issued": "Sep 2026", "credentialId": "194062-178-903-8242", "skills": ["Cybersecurity"] },
+    { "name": "Generative AI for Educators with Gemini", "issuer": "Google Digital Academy (Skillshop)", "issued": "Nov 2025", "credentialId": "435082776", "skills": ["Artificial Intelligence", "Generative AI"] },
+    { "name": "Gemini Certified Educator", "issuer": "Google", "issued": "Oct 2025", "expires": "Oct 2028", "credentialId": "163981769", "skills": ["Google Gemini", "Artificial Intelligence"] }
+  ],
+  "training": [
+    { "name": "CCNA Training", "detail": "Switching, routing, RIP, OSPF, BGP", "provider": "Knowledge Academy, Dhaka", "when": "2014, 10 months" },
+    { "name": "Linux & System Administration", "detail": "Mail, file, web, DHCP, NFS, proxy and Samba servers", "provider": "New Horizons, Dhaka", "when": "2019, 3 months" },
+    { "name": "Campus Network Design", "detail": "Server configuration, print server, security policy", "provider": "ULAB", "when": "2012, 3 months" }
+  ],
+  "education": [
+    { "degree": "B.Sc. in Electronics & Telecommunication Engineering", "school": "University of Liberal Arts Bangladesh (ULAB)", "detail": "Major in Networking", "result": "CGPA 3.00 / 4.00", "year": "2012" },
+    { "degree": "Higher Secondary Certificate, Science", "school": "Dhaka Public College", "result": "GPA 3.50 / 5.00", "year": "2007" },
+    { "degree": "Secondary School Certificate, Science", "school": "Alijan J.M. Academy", "result": "GPA 3.63 / 5.00", "year": "2005" }
+  ],
+  "projects": [
+    { "name": "Self-hosted media server", "description": "Personal streaming server published over HTTPS through Tailscale Funnel, with no open inbound ports.", "url": "https://github.com/bitopiit-dev/self-hosted-media-server", "tags": ["Tailscale", "Zero-trust ingress", "Self-hosting"] },
+    { "name": "This website", "description": "Full-stack portfolio: React front end on GitHub Pages, Node.js / Express API with MongoDB for the contact form and visit counter.", "url": "https://github.com/bitopiit-dev", "tags": ["React", "Node.js", "MongoDB"] }
+  ],
+  "memberships": [
+    { "name": "Institution of Engineers Bangladesh (IEB)", "detail": "Member, ID 39838" },
+    { "name": "Society of IT Professionals (SCITP)", "detail": "Member, Chittagong" }
+  ],
+  "languages": [
+    { "name": "Bengali", "level": "Native" },
+    { "name": "English", "level": "Full professional" },
+    { "name": "Japanese", "level": "Elementary" }
+  ]
+}
