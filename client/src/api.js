@@ -38,3 +38,13 @@ export async function countVisit() {
   }
   return body.visits;
 }
+
+// ---------- Admin ----------
+function adminRequest(token, path, options = {}) {
+  return request(path, { ...options, headers: { authorization: `Bearer ${token}`, ...(options.headers || {}) } });
+}
+export const listMessages = (token) => adminRequest(token, '/api/messages?limit=500');
+export const setRead = (token, id, read) =>
+  adminRequest(token, `/api/messages/${encodeURIComponent(id)}/read`, { method: 'PATCH', body: JSON.stringify({ read }) });
+export const deleteMessage = (token, id) =>
+  adminRequest(token, `/api/messages/${encodeURIComponent(id)}`, { method: 'DELETE' });

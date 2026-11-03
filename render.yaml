@@ -18,3 +18,7 @@ services:
         sync: false
       - key: ADMIN_TOKEN
         generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: NOTIFY_EMAIL
+        sync: false

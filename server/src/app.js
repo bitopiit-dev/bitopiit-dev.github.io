@@ -8,7 +8,7 @@ import { visitsRouter } from './routes/visits.js';
 
 const profilePath = fileURLToPath(new URL('../../shared/profile.json', import.meta.url));
 
-export function createApp(store, { origins = [] } = {}) {
+export function createApp(store, { origins = [], notify } = {}) {
   const app = express();
   const profile = JSON.parse(readFileSync(profilePath, 'utf8'));
 
@@ -20,15 +20,24 @@ export function createApp(store, { origins = [] } = {}) {
         if (!origin || origins.includes(origin)) return cb(null, true);
         cb(null, false);
       },
-      methods: ['GET', 'POST', 'PATCH'],
+      methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      maxAge: 86400,
     })
   );
   app.use(express.json({ limit: '20kb' }));
 
   app.get('/', (_req, res) => res.json({ name: 'arifur-portfolio-api', docs: '/api/health' }));
-  app.get('/api/health', (_req, res) => res.json({ ok: true, store: store.kind, time: new Date().toISOString() }));
+  app.get('/api/health', (_req, res) =>
+    res.json({
+      ok: true,
+      store: store.kind,
+      emailNotifications: Boolean(process.env.RESEND_API_KEY && process.env.NOTIFY_EMAIL),
+      time: new Date().toISOString(),
+    })
+  );
   app.get('/api/profile', (_req, res) => res.json(profile));
-  app.use('/api/messages', messagesRouter(store));
+  app.use('/api/messages', messagesRouter(store, notify ? { notify } : {}));
   app.use('/api/visits', visitsRouter(store));
 
   app.use((_req, res) => res.status(404).json({ error: 'Not found.' }));

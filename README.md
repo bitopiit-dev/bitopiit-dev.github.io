@@ -63,17 +63,20 @@ Render's free plan sleeps after 15 minutes without traffic, and the first reques
 
 ## Read your messages
 
-```bash
-curl -H "Authorization: Bearer YOUR_ADMIN_TOKEN" https://<your-service>.onrender.com/api/messages
-```
+Open **https://bitopiit-dev.github.io/admin/** and sign in with `ADMIN_TOKEN` (Render › arifur-portfolio-api › Environment). You can reply, mark messages as read or unread, and delete them. The page is hidden from search engines and every action needs the token.
 
-To mark one as read:
+## Email alerts for new messages
 
-```bash
-curl -X PATCH -H "Authorization: Bearer YOUR_ADMIN_TOKEN" https://<your-service>.onrender.com/api/messages/<id>/read
-```
+Render's free plan blocks SMTP, so the API sends alerts through **Resend**'s HTTPS API instead (free: 3,000 emails a month).
 
-You can also browse them in Atlas under **Browse Collections › messages**.
+1. Sign up at resend.com with the email address that should receive alerts.
+2. **API Keys › Create API Key**, permission **Sending access**. Copy the key (starts with `re_`).
+3. In Render › arifur-portfolio-api › **Environment**, add:
+   - `RESEND_API_KEY` = the key
+   - `NOTIFY_EMAIL` = the email you signed up to Resend with
+4. Save; Render redeploys. `/api/health` now shows `"emailNotifications": true`.
+
+Alerts come from `onboarding@resend.dev`, which can only deliver to your own Resend account email. Press **Reply** in your mail app to answer the visitor directly. If an alert fails, the message is still saved and shows on the admin page.
 
 ## API reference
 
@@ -83,7 +86,8 @@ You can also browse them in Atlas under **Browse Collections › messages**.
 | GET | `/api/profile` | public | The content of `shared/profile.json` |
 | POST | `/api/messages` | public, 5 per 15 min per IP | Send a contact message `{name, email, subject?, message}` |
 | GET | `/api/messages` | admin token | List messages, newest first (`?limit=` up to 200) |
-| PATCH | `/api/messages/:id/read` | admin token | Mark a message as read |
+| PATCH | `/api/messages/:id/read` | admin token | Mark read; send `{"read": false}` to mark unread |
+| DELETE | `/api/messages/:id` | admin token | Delete a message |
 | GET / POST | `/api/visits` | public, POST 10 per min per IP | Read / increase the visit counter |
 
 The API uses Helmet security headers, a CORS allow-list (`CLIENT_ORIGIN`), a 20 kB request limit, input validation, a spam honeypot field and rate limits.

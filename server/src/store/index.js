@@ -35,10 +35,19 @@ function mongoStore() {
       const docs = await Message.find().sort({ createdAt: -1 }).limit(limit).lean();
       return docs.map(({ _id, __v, ...rest }) => ({ id: _id.toString(), ...rest }));
     },
-    async markRead(id) {
+    async setRead(id, read = true) {
       if (!mongoose.isValidObjectId(id)) return false;
-      const r = await Message.updateOne({ _id: id }, { read: true });
+      const r = await Message.updateOne({ _id: id }, { read });
       return r.matchedCount > 0;
+    },
+    async deleteMessage(id) {
+      if (!mongoose.isValidObjectId(id)) return false;
+      const r = await Message.deleteOne({ _id: id });
+      return r.deletedCount > 0;
+    },
+    async countMessages() {
+      const [total, unread] = await Promise.all([Message.countDocuments(), Message.countDocuments({ read: false })]);
+      return { total, unread };
     },
     async incrementVisits() {
       const c = await Counter.findOneAndUpdate({ _id: 'visits' }, { $inc: { value: 1 } }, { upsert: true, new: true });
@@ -65,11 +74,21 @@ function memoryStore() {
     async listMessages({ limit = 50 } = {}) {
       return messages.slice(0, limit);
     },
-    async markRead(id) {
+    async setRead(id, read = true) {
       const m = messages.find((x) => x.id === id);
       if (!m) return false;
-      m.read = true;
+      m.read = read;
+      m.updatedAt = new Date();
       return true;
+    },
+    async deleteMessage(id) {
+      const i = messages.findIndex((x) => x.id === id);
+      if (i === -1) return false;
+      messages.splice(i, 1);
+      return true;
+    },
+    async countMessages() {
+      return { total: messages.length, unread: messages.filter((m) => !m.read).length };
     },
     async incrementVisits() {
       return ++visits;
