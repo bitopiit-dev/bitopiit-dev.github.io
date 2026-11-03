@@ -159,7 +159,7 @@
   ],
   "projects": [
     { "name": "Self-hosted media server", "description": "Personal streaming server published over HTTPS through Tailscale Funnel, with no open inbound ports.", "url": "https://github.com/bitopiit-dev/bitopiit-dev.github.io/self-hosted-media-server", "tags": ["Tailscale", "Zero-trust ingress", "Self-hosting"] },
-    { "name": "This website", "description": "Full-stack portfolio: React front end on GitHub Pages, Node.js / Express API with MongoDB for the contact form and visit counter.", "url": "https://github.com/bitopiit-dev/bitopiit-dev.github.io", "tags": ["React", "Node.js", "MongoDB"] }
+    { "name": "This website", "description": "Full-stack portfolio: React front end on GitHub Pages, Node.js / Express API with MongoDB for the contact form and visit counter.", "url": "https://github.com/bitopiit-dev", "tags": ["React", "Node.js", "MongoDB"] }
   ],
   "memberships": [
     { "name": "Institution of Engineers Bangladesh (IEB)", "detail": "Member, ID 39838" },
