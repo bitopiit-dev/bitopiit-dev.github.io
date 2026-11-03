@@ -10,7 +10,7 @@
     "phone": "+880 1871-001470",
     "phoneHref": "+8801871001470",
     "linkedin": "https://www.linkedin.com/in/arifurrahman-it",
-    "github": "https://github.com/bitopiit-dev"
+    "github": "https://github.com/bitopiit-dev/bitopiit-dev.github.io"
   },
   "about": [
     "ERP and IT operations leader with 12+ years in Bangladesh’s Ready-Made Garments sector, now running ERP and IT across Bitopi Group’s manufacturing units at Cumilla EPZ and reporting to the Group Sr. GM of ERP & IT.",
@@ -158,8 +158,8 @@
     { "degree": "Secondary School Certificate, Science", "school": "Alijan J.M. Academy", "result": "GPA 3.63 / 5.00", "year": "2005" }
   ],
   "projects": [
-    { "name": "Self-hosted media server", "description": "Personal streaming server published over HTTPS through Tailscale Funnel, with no open inbound ports.", "url": "https://github.com/bitopiit-dev/self-hosted-media-server", "tags": ["Tailscale", "Zero-trust ingress", "Self-hosting"] },
-    { "name": "This website", "description": "Full-stack portfolio: React front end on GitHub Pages, Node.js / Express API with MongoDB for the contact form and visit counter.", "url": "https://github.com/bitopiit-dev", "tags": ["React", "Node.js", "MongoDB"] }
+    { "name": "Self-hosted media server", "description": "Personal streaming server published over HTTPS through Tailscale Funnel, with no open inbound ports.", "url": "https://github.com/bitopiit-dev/bitopiit-dev.github.io/self-hosted-media-server", "tags": ["Tailscale", "Zero-trust ingress", "Self-hosting"] },
+    { "name": "This website", "description": "Full-stack portfolio: React front end on GitHub Pages, Node.js / Express API with MongoDB for the contact form and visit counter.", "url": "https://github.com/bitopiit-dev/bitopiit-dev.github.io", "tags": ["React", "Node.js", "MongoDB"] }
   ],
   "memberships": [
     { "name": "Institution of Engineers Bangladesh (IEB)", "detail": "Member, ID 39838" },
